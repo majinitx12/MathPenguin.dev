@@ -3,7 +3,7 @@ var http = require('http'),
 
 http.createServer((req, res) => proxy({
     url(req){
-        return 'https://example.org' + req.url;
+        return 'https://nodeunblocker.com' + req.url;
     },
     request(data){
         if (data.clientRequest.url == '/test') return data.clientResponse.end('Access denied!');
